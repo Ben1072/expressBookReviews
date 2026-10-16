@@ -4,7 +4,7 @@ let isValid = require("./auth_users.js").isValid;
 let users = require("./auth_users.js").users;
 const public_users = express.Router();
 
-// Helper function simulating an asynchronous database call using a Promise
+// Helper function simulating an asynchronous database resolution call using a Promise
 const fetchBooksData = () => {
   return new Promise((resolve, reject) => {
     if (books) {
